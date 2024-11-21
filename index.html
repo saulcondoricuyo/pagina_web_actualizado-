@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Saul</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/SLCC.png" alt="">
+            </div>
+            <h1>Saul CONDORI</h1>
+            <h2>Administrador de Redes - Experto Comunicaciones</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100087332079072"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/LeninCuyo"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://join.skype.com/invite/lnOkLzGoDRze"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://www.linkedin.com/in/saullenincondoricuyo-273306255/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Saul Lenin Condori Cuyo.</span> En el dinámico mundo tecnológico de hoy, la conectividad es la columna vertebral que sostiene el funcionamiento eficiente de organizaciones y empresas. Detrás de esta infraestructura vital se encuentra un equipo de profesionales dedicados, y en el corazón de ese equipo, reside el Administrador de Redes y Comunicaciones.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            02-11-2002
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +51 929725748
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            saul.condori.c@tecsup.edu.pe
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Arequipa- Peru
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Administrador de Redes</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div>
+                    <button id="downloadCvButton" onclick="downloadCV()">
+                        Descargar CV <i class="fa-solid fa-download"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Comunicaciones Inalámbricas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Administración de Sistemas Operativos Avanzado</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Diseño de Proyectos de Innovación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Administración de Sistemas Operativos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Investigación e Innovación Tecnológica</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Administracion de redes y comunicaciones</h4>
+                        <span class="casa">Instituto Tecsup</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>Tengo formación técnica en Redes y Comunicaciones de Datos en Tecsup y me destaco por ser
+                            responsable, puntual, cortés, solidario, empático, honrado, carismático y emprendedor. Tengo
+                            experiencia en la implementación de redes, sistemas de cableado estructurado y fibra óptica,</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Camaras de Seguridad CCTV -IP</h4>
+                        <span class="casa">Instituto Jobs</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>En Perú, al igual que en muchas partes del mundo, 
+                        el uso de cámaras de seguridad se ha vuelto cada vez 
+                        más común debido a la creciente preocupación por la 
+                        seguridad pública y la prevención del delito. Arequipa,
+                         como una de las ciudades más importantes del país, también
+                          ha experimentado un aumento en la instalación de sistemas 
+                          de videovigilancia.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Cisco</h4>
+                        <span class="casa">Hacking y Ciberseguridad</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Soy un profesional apasionado por la seguridad informática con experiencia en hacking
+                             ético y ciberseguridad. He dedicado mi carrera a proteger sistemas y datos contra
+                              amenazas cibernéticas, identificando vulnerabilidades y desarrollando soluciones 
+                              robustas. Mi enfoque proactivo y mi habilidad para pensar como un hacker me permiten
+                               anticipar y mitigar posibles riesgos de seguridad.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Empresa de internet</h4>
+                        <span class="casa">Fibertel S.A.C</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Proporcioné y mantuve servicios de internet y telecomunicaciones, asegurando una conexión confiable y de alta calidad para los clientes. Supervisé y optimicé la infraestructura de red para garantizar un rendimiento óptimo. Ofrecí soporte técnico especializado y mejoré los protocolos de servicio para aumentar la eficiencia y reducir los tiempos de respuesta.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Técnico de Seguridad</h4>
+                        <span class="casa">Compañía verisure</span>
+                        <span class="fecha">2023-2024</span>
+                        <p>Instalé y mantuve sistemas de seguridad, incluyendo cámaras, detectores de movimiento y alarmas. Aseguré la conexión con la Central de Monitoreo para supervisión en tiempo real y respuestas rápidas. Proporcioné soporte técnico a los clientes y optimicé protocolos para mejorar la eficiencia y reducir tiempos de respuesta.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>***********</h4>
+                        <span class="casa">**************</span>
+                        <span class="fecha">**********</span>
+                        <p>*************************</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Web</h3>
+                        <p>Avanzado</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño de Proyectos</h3>
+                        <p>Innovadores</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Administración de</h3>
+                        <p>Sistemas Operativos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Comunicaciones</h3>
+                        <p>Inalámbricas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Implementación e Integración de</h3>
+                        <p>Tecnologías Emergentes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                **************
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +51 929725748
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: saul.condori.c@tecsup.edu.pe
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100087332079072"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/LeninCuyo"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://join.skype.com/invite/lnOkLzGoDRze"><i class="fa-brands fa-skype"></i></a>
+            <a href="https://www.linkedin.com/in/saullenincondoricuyo-273306255/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+    <script>
+        function downloadCV() {
+            const link = document.createElement('a');
+            link.href = 'doc/CV SLCC.pdf'; // Ruta al archivo PDF
+            link.download = 'CV-SLCC'; // Nombre del archivo que se descargará
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        </script>
+        
+    <script src="script.js"></script>
+</body>
+</html>
